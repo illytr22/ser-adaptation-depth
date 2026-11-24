@@ -1,0 +1,2340 @@
+{
+  "summaries": {
+    "baseline_cnn": {
+      "wa": {
+        "mean": 45.0,
+        "std": 9.08,
+        "fold_values": [
+          41.25,
+          55.83,
+          39.17,
+          32.92,
+          55.0,
+          45.83
+        ]
+      },
+      "uar": {
+        "mean": 44.6,
+        "std": 9.72,
+        "fold_values": [
+          42.19,
+          55.86,
+          37.11,
+          31.25,
+          54.69,
+          46.48
+        ]
+      },
+      "macro_f1": {
+        "mean": 42.26,
+        "std": 11.26,
+        "fold_values": [
+          39.62,
+          54.9,
+          35.98,
+          24.85,
+          53.07,
+          45.13
+        ]
+      },
+      "weighted_f1": {
+        "mean": 43.16,
+        "std": 11.23,
+        "fold_values": [
+          39.91,
+          56.59,
+          37.68,
+          26.01,
+          53.73,
+          45.07
+        ]
+      },
+      "collapse_count": 0,
+      "total_runs": 6,
+      "config": {
+        "exp_name": "baseline_cnn",
+        "model_type": "cnn",
+        "mode": "full_ft",
+        "seeds": [
+          42
+        ],
+        "lr": 0.001,
+        "batch_size": 16,
+        "epochs": 30,
+        "patience": 5,
+        "weighted_loss": true,
+        "train_crop_mode": "random"
+      }
+    },
+    "baseline_bilstm": {
+      "wa": {
+        "mean": 40.97,
+        "std": 3.01,
+        "fold_values": [
+          45.0,
+          44.17,
+          37.5,
+          40.83,
+          39.58,
+          38.75
+        ]
+      },
+      "uar": {
+        "mean": 39.84,
+        "std": 3.8,
+        "fold_values": [
+          42.97,
+          45.31,
+          35.55,
+          40.62,
+          37.89,
+          36.72
+        ]
+      },
+      "macro_f1": {
+        "mean": 38.05,
+        "std": 3.55,
+        "fold_values": [
+          40.55,
+          41.96,
+          33.93,
+          39.92,
+          38.49,
+          33.48
+        ]
+      },
+      "weighted_f1": {
+        "mean": 39.4,
+        "std": 3.31,
+        "fold_values": [
+          42.42,
+          42.38,
+          35.61,
+          41.2,
+          39.72,
+          35.05
+        ]
+      },
+      "collapse_count": 0,
+      "total_runs": 6,
+      "config": {
+        "exp_name": "baseline_bilstm",
+        "model_type": "lstm",
+        "mode": "full_ft",
+        "seeds": [
+          42
+        ],
+        "lr": 0.001,
+        "batch_size": 16,
+        "epochs": 30,
+        "patience": 5,
+        "weighted_loss": true,
+        "train_crop_mode": "random"
+      }
+    },
+    "w2v2_linear_probe": {
+      "wa": {
+        "mean": 42.15,
+        "std": 4.69,
+        "fold_values": [
+          47.92,
+          42.92,
+          40.83,
+          45.42,
+          41.67,
+          34.17
+        ]
+      },
+      "uar": {
+        "mean": 42.19,
+        "std": 5.5,
+        "fold_values": [
+          47.66,
+          42.97,
+          41.02,
+          47.66,
+          41.02,
+          32.81
+        ]
+      },
+      "macro_f1": {
+        "mean": 40.11,
+        "std": 5.21,
+        "fold_values": [
+          46.6,
+          40.02,
+          39.84,
+          44.31,
+          38.33,
+          31.58
+        ]
+      },
+      "weighted_f1": {
+        "mean": 40.62,
+        "std": 5.06,
+        "fold_values": [
+          46.59,
+          40.86,
+          40.51,
+          44.98,
+          38.41,
+          32.35
+        ]
+      },
+      "collapse_count": 0,
+      "total_runs": 6,
+      "config": {
+        "exp_name": "w2v2_linear_probe",
+        "model_type": "wav2vec2",
+        "mode": "linear_probe",
+        "seeds": [
+          42
+        ],
+        "lr": 0.001,
+        "batch_size": 8,
+        "epochs": 20,
+        "patience": 5,
+        "weighted_loss": true,
+        "train_crop_mode": "random"
+      }
+    },
+    "w2v2_weighted_sum": {
+      "wa": {
+        "mean": 55.97,
+        "std": 4.55,
+        "fold_values": [
+          61.25,
+          50.42,
+          61.25,
+          56.25,
+          54.58,
+          52.08
+        ]
+      },
+      "uar": {
+        "mean": 56.64,
+        "std": 5.9,
+        "fold_values": [
+          63.67,
+          48.44,
+          61.33,
+          58.98,
+          56.25,
+          51.17
+        ]
+      },
+      "macro_f1": {
+        "mean": 53.69,
+        "std": 5.55,
+        "fold_values": [
+          58.96,
+          45.64,
+          60.12,
+          55.22,
+          52.59,
+          49.6
+        ]
+      },
+      "weighted_f1": {
+        "mean": 54.23,
+        "std": 5.17,
+        "fold_values": [
+          58.62,
+          47.47,
+          60.95,
+          56.1,
+          51.65,
+          50.56
+        ]
+      },
+      "collapse_count": 0,
+      "total_runs": 6,
+      "config": {
+        "exp_name": "w2v2_weighted_sum",
+        "model_type": "wav2vec2",
+        "mode": "weighted_sum",
+        "seeds": [
+          42
+        ],
+        "lr": 0.001,
+        "batch_size": 8,
+        "epochs": 20,
+        "patience": 5,
+        "weighted_loss": true,
+        "train_crop_mode": "random"
+      }
+    },
+    "w2v2_partial_ft": {
+      "wa": {
+        "mean": 72.31,
+        "std": 6.7,
+        "fold_values": [
+          78.47,
+          79.44,
+          63.61,
+          64.86,
+          73.75,
+          73.75
+        ]
+      },
+      "uar": {
+        "mean": 72.37,
+        "std": 6.89,
+        "fold_values": [
+          79.04,
+          78.78,
+          62.63,
+          65.49,
+          72.92,
+          75.39
+        ]
+      },
+      "macro_f1": {
+        "mean": 71.1,
+        "std": 6.76,
+        "fold_values": [
+          78.04,
+          77.51,
+          62.98,
+          62.81,
+          72.6,
+          72.64
+        ]
+      },
+      "weighted_f1": {
+        "mean": 71.92,
+        "std": 6.66,
+        "fold_values": [
+          78.37,
+          78.68,
+          64.06,
+          63.66,
+          73.7,
+          73.03
+        ]
+      },
+      "collapse_count": 0,
+      "total_runs": 18,
+      "config": {
+        "exp_name": "w2v2_partial_ft",
+        "model_type": "wav2vec2",
+        "mode": "partial_ft",
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "lr_per_fold": {
+          "1": "3e-5",
+          "2": "5e-5",
+          "3": "1e-5",
+          "4": "3e-5",
+          "5": "3e-5",
+          "6": "5e-5"
+        },
+        "batch_size": 4,
+        "epochs": 20,
+        "patience": 5,
+        "weighted_loss": true,
+        "train_crop_mode": "random"
+      }
+    },
+    "w2v2_full_ft": {
+      "wa": {
+        "mean": 71.57,
+        "std": 6.46,
+        "fold_values": [
+          73.19,
+          82.5,
+          66.25,
+          64.03,
+          70.97,
+          72.5
+        ]
+      },
+      "uar": {
+        "mean": 71.55,
+        "std": 6.11,
+        "fold_values": [
+          73.18,
+          81.38,
+          65.89,
+          64.71,
+          70.05,
+          74.09
+        ]
+      },
+      "macro_f1": {
+        "mean": 70.3,
+        "std": 6.49,
+        "fold_values": [
+          72.3,
+          81.06,
+          65.92,
+          61.9,
+          69.73,
+          70.91
+        ]
+      },
+      "weighted_f1": {
+        "mean": 71.21,
+        "std": 6.64,
+        "fold_values": [
+          73.26,
+          82.3,
+          66.9,
+          62.58,
+          70.8,
+          71.41
+        ]
+      },
+      "collapse_count": 0,
+      "total_runs": 18,
+      "config": {
+        "exp_name": "w2v2_full_ft",
+        "model_type": "wav2vec2",
+        "mode": "full_ft",
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "lr_per_fold": {
+          "1": "3e-5",
+          "2": "5e-5",
+          "3": "1e-5",
+          "4": "3e-5",
+          "5": "3e-5",
+          "6": "5e-5"
+        },
+        "batch_size": 4,
+        "epochs": 20,
+        "patience": 5,
+        "weighted_loss": true,
+        "train_crop_mode": "random"
+      }
+    },
+    "wavlm_full_ft": {
+      "wa": {
+        "mean": 63.24,
+        "std": 12.39,
+        "fold_values": [
+          74.31,
+          40.83,
+          70.0,
+          60.42,
+          72.5,
+          61.39
+        ]
+      },
+      "uar": {
+        "mean": 63.06,
+        "std": 12.52,
+        "fold_values": [
+          74.22,
+          39.45,
+          68.62,
+          61.2,
+          71.22,
+          63.67
+        ]
+      },
+      "macro_f1": {
+        "mean": 60.57,
+        "std": 15.13,
+        "fold_values": [
+          73.75,
+          32.88,
+          69.11,
+          57.69,
+          71.45,
+          58.52
+        ]
+      },
+      "weighted_f1": {
+        "mean": 61.24,
+        "std": 15.13,
+        "fold_values": [
+          74.18,
+          33.86,
+          70.6,
+          57.81,
+          72.27,
+          58.71
+        ]
+      },
+      "collapse_count": 1,
+      "total_runs": 18,
+      "config": {
+        "exp_name": "wavlm_full_ft",
+        "model_type": "wavlm",
+        "mode": "full_ft",
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "lr_per_fold": {
+          "1": "3e-5",
+          "2": "5e-5",
+          "3": "3e-5",
+          "4": "5e-5",
+          "5": "3e-5",
+          "6": "1e-5"
+        },
+        "batch_size": 4,
+        "epochs": 20,
+        "patience": 5,
+        "weighted_loss": true,
+        "train_crop_mode": "random"
+      }
+    },
+    "ablation_center_crop": {
+      "wa": {
+        "mean": 71.88,
+        "std": 7.47,
+        "fold_values": [
+          80.69,
+          77.92,
+          65.0,
+          61.39,
+          74.58,
+          71.67
+        ]
+      },
+      "uar": {
+        "mean": 71.92,
+        "std": 7.53,
+        "fold_values": [
+          81.51,
+          77.47,
+          64.32,
+          61.98,
+          73.83,
+          72.4
+        ]
+      },
+      "macro_f1": {
+        "mean": 70.74,
+        "std": 7.82,
+        "fold_values": [
+          80.25,
+          76.5,
+          64.97,
+          58.9,
+          73.67,
+          70.16
+        ]
+      },
+      "weighted_f1": {
+        "mean": 71.5,
+        "std": 7.77,
+        "fold_values": [
+          80.67,
+          77.85,
+          65.77,
+          59.84,
+          74.34,
+          70.55
+        ]
+      },
+      "collapse_count": 0,
+      "total_runs": 18,
+      "config": {
+        "exp_name": "ablation_center_crop",
+        "model_type": "wav2vec2",
+        "mode": "full_ft",
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "lr_per_fold": {
+          "1": "3e-5",
+          "2": "5e-5",
+          "3": "1e-5",
+          "4": "3e-5",
+          "5": "3e-5",
+          "6": "5e-5"
+        },
+        "batch_size": 4,
+        "epochs": 20,
+        "patience": 5,
+        "weighted_loss": true,
+        "train_crop_mode": "center"
+      }
+    },
+    "ablation_unweighted_ce": {
+      "wa": {
+        "mean": 71.16,
+        "std": 7.2,
+        "fold_values": [
+          80.0,
+          80.0,
+          65.69,
+          63.19,
+          69.31,
+          68.75
+        ]
+      },
+      "uar": {
+        "mean": 71.57,
+        "std": 7.02,
+        "fold_values": [
+          80.99,
+          79.17,
+          65.89,
+          63.8,
+          69.01,
+          70.57
+        ]
+      },
+      "macro_f1": {
+        "mean": 70.08,
+        "std": 7.7,
+        "fold_values": [
+          80.09,
+          78.72,
+          66.51,
+          60.43,
+          68.08,
+          66.63
+        ]
+      },
+      "weighted_f1": {
+        "mean": 70.58,
+        "std": 7.66,
+        "fold_values": [
+          80.02,
+          79.98,
+          66.9,
+          61.42,
+          68.21,
+          66.94
+        ]
+      },
+      "collapse_count": 0,
+      "total_runs": 18,
+      "config": {
+        "exp_name": "ablation_unweighted_ce",
+        "model_type": "wav2vec2",
+        "mode": "full_ft",
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "lr_per_fold": {
+          "1": "3e-5",
+          "2": "5e-5",
+          "3": "1e-5",
+          "4": "3e-5",
+          "5": "3e-5",
+          "6": "5e-5"
+        },
+        "batch_size": 4,
+        "epochs": 20,
+        "patience": 5,
+        "weighted_loss": false,
+        "train_crop_mode": "random"
+      }
+    }
+  },
+  "paired_tests": {
+    "full_ft_vs_partial_ft": {
+      "uar": {
+        "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+        "mean_a": 71.55,
+        "std_a": 6.11,
+        "mean_b": 72.38,
+        "std_b": 6.89,
+        "mean_diff": -0.83,
+        "std_diff": 3.41,
+        "ci95_low": -4.4,
+        "ci95_high": 2.75,
+        "t_stat": -0.5924,
+        "p_value_ttest": 0.579341,
+        "w_stat": 8.0,
+        "p_value_wilcoxon": 0.6875,
+        "fold_diffs": [
+          -5.86,
+          2.6,
+          3.26,
+          -0.78,
+          -2.87,
+          -1.3
+        ]
+      },
+      "macro_f1": {
+        "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+        "mean_a": 70.3,
+        "std_a": 6.48,
+        "mean_b": 71.1,
+        "std_b": 6.76,
+        "mean_diff": -0.79,
+        "std_diff": 3.53,
+        "ci95_low": -4.5,
+        "ci95_high": 2.92,
+        "t_stat": -0.5497,
+        "p_value_ttest": 0.606146,
+        "w_stat": 9.0,
+        "p_value_wilcoxon": 0.84375,
+        "fold_diffs": [
+          -5.74,
+          3.55,
+          2.94,
+          -0.91,
+          -2.87,
+          -1.73
+        ]
+      },
+      "wa": {
+        "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+        "mean_a": 71.57,
+        "std_a": 6.46,
+        "mean_b": 72.31,
+        "std_b": 6.7,
+        "mean_diff": -0.74,
+        "std_diff": 3.19,
+        "ci95_low": -4.09,
+        "ci95_high": 2.61,
+        "t_stat": -0.5681,
+        "p_value_ttest": 0.594542,
+        "w_stat": 8.0,
+        "p_value_wilcoxon": 0.6875,
+        "fold_diffs": [
+          -5.28,
+          3.06,
+          2.64,
+          -0.83,
+          -2.78,
+          -1.25
+        ]
+      }
+    },
+    "full_ft_vs_center_crop": {
+      "uar": {
+        "comparison": "wav2vec2 full FT vs Center Crop",
+        "mean_a": 71.55,
+        "std_a": 6.11,
+        "mean_b": 71.92,
+        "std_b": 7.53,
+        "mean_diff": -0.37,
+        "std_diff": 4.71,
+        "ci95_low": -5.31,
+        "ci95_high": 4.57,
+        "t_stat": -0.1916,
+        "p_value_ttest": 0.855629,
+        "w_stat": 10.0,
+        "p_value_wilcoxon": 1.0,
+        "fold_diffs": [
+          -8.33,
+          3.91,
+          1.57,
+          2.73,
+          -3.78,
+          1.69
+        ]
+      },
+      "macro_f1": {
+        "comparison": "wav2vec2 full FT vs Center Crop",
+        "mean_a": 70.3,
+        "std_a": 6.48,
+        "mean_b": 70.74,
+        "std_b": 7.82,
+        "mean_diff": -0.44,
+        "std_diff": 4.67,
+        "ci95_low": -5.33,
+        "ci95_high": 4.46,
+        "t_stat": -0.2301,
+        "p_value_ttest": 0.827104,
+        "w_stat": 10.0,
+        "p_value_wilcoxon": 1.0,
+        "fold_diffs": [
+          -7.95,
+          4.56,
+          0.95,
+          3.0,
+          -3.94,
+          0.75
+        ]
+      },
+      "wa": {
+        "comparison": "wav2vec2 full FT vs Center Crop",
+        "mean_a": 71.57,
+        "std_a": 6.46,
+        "mean_b": 71.88,
+        "std_b": 7.47,
+        "mean_diff": -0.3,
+        "std_diff": 4.45,
+        "ci95_low": -4.97,
+        "ci95_high": 4.37,
+        "t_stat": -0.1661,
+        "p_value_ttest": 0.874573,
+        "w_stat": 10.0,
+        "p_value_wilcoxon": 1.0,
+        "fold_diffs": [
+          -7.5,
+          4.58,
+          1.25,
+          2.64,
+          -3.61,
+          0.83
+        ]
+      }
+    },
+    "full_ft_vs_wavlm": {
+      "uar": {
+        "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+        "mean_a": 71.55,
+        "std_a": 6.11,
+        "mean_b": 63.06,
+        "std_b": 12.52,
+        "mean_diff": 8.49,
+        "std_diff": 17.07,
+        "ci95_low": -9.43,
+        "ci95_high": 26.4,
+        "t_stat": 1.2179,
+        "p_value_ttest": 0.277605,
+        "w_stat": 6.0,
+        "p_value_wilcoxon": 0.4375,
+        "fold_diffs": [
+          -1.04,
+          41.93,
+          -2.73,
+          3.51,
+          -1.17,
+          10.42
+        ]
+      },
+      "macro_f1": {
+        "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+        "mean_a": 70.3,
+        "std_a": 6.48,
+        "mean_b": 60.57,
+        "std_b": 15.13,
+        "mean_diff": 9.74,
+        "std_diff": 19.69,
+        "ci95_low": -10.93,
+        "ci95_high": 30.4,
+        "t_stat": 1.2111,
+        "p_value_ttest": 0.279966,
+        "w_stat": 6.0,
+        "p_value_wilcoxon": 0.4375,
+        "fold_diffs": [
+          -1.45,
+          48.18,
+          -3.19,
+          4.21,
+          -1.72,
+          12.39
+        ]
+      },
+      "wa": {
+        "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+        "mean_a": 71.57,
+        "std_a": 6.46,
+        "mean_b": 63.24,
+        "std_b": 12.39,
+        "mean_diff": 8.33,
+        "std_diff": 17.17,
+        "ci95_low": -9.69,
+        "ci95_high": 26.35,
+        "t_stat": 1.1886,
+        "p_value_ttest": 0.287961,
+        "w_stat": 7.0,
+        "p_value_wilcoxon": 0.5625,
+        "fold_diffs": [
+          -1.12,
+          41.67,
+          -3.75,
+          3.61,
+          -1.53,
+          11.11
+        ]
+      }
+    },
+    "full_ft_vs_weighted_sum": {
+      "uar": {
+        "comparison": "wav2vec2 full FT vs wav2vec2 weighted-sum",
+        "mean_a": 71.55,
+        "std_a": 6.11,
+        "mean_b": 56.64,
+        "std_b": 5.9,
+        "mean_diff": 14.91,
+        "std_diff": 11.05,
+        "ci95_low": 3.31,
+        "ci95_high": 26.51,
+        "t_stat": 3.3038,
+        "p_value_ttest": 0.021387,
+        "w_stat": 0.0,
+        "p_value_wilcoxon": 0.03125,
+        "fold_diffs": [
+          9.51,
+          32.94,
+          4.56,
+          5.73,
+          13.8,
+          22.92
+        ]
+      },
+      "macro_f1": {
+        "comparison": "wav2vec2 full FT vs wav2vec2 weighted-sum",
+        "mean_a": 70.3,
+        "std_a": 6.48,
+        "mean_b": 53.69,
+        "std_b": 5.55,
+        "mean_diff": 16.61,
+        "std_diff": 10.98,
+        "ci95_low": 5.1,
+        "ci95_high": 28.13,
+        "t_stat": 3.708,
+        "p_value_ttest": 0.013884,
+        "w_stat": 0.0,
+        "p_value_wilcoxon": 0.03125,
+        "fold_diffs": [
+          13.34,
+          35.42,
+          5.8,
+          6.68,
+          17.14,
+          21.31
+        ]
+      },
+      "wa": {
+        "comparison": "wav2vec2 full FT vs wav2vec2 weighted-sum",
+        "mean_a": 71.57,
+        "std_a": 6.46,
+        "mean_b": 55.97,
+        "std_b": 4.55,
+        "mean_diff": 15.6,
+        "std_diff": 9.82,
+        "ci95_low": 5.29,
+        "ci95_high": 25.91,
+        "t_stat": 3.8909,
+        "p_value_ttest": 0.011515,
+        "w_stat": 0.0,
+        "p_value_wilcoxon": 0.03125,
+        "fold_diffs": [
+          11.94,
+          32.08,
+          5.0,
+          7.78,
+          16.39,
+          20.42
+        ]
+      }
+    },
+    "full_ft_vs_unweighted_ce": {
+      "uar": {
+        "comparison": "wav2vec2 full FT (Weighted CE) vs Unweighted CE",
+        "mean_a": 71.55,
+        "std_a": 6.11,
+        "mean_b": 71.57,
+        "std_b": 7.02,
+        "mean_diff": -0.02,
+        "std_diff": 4.0,
+        "ci95_low": -4.22,
+        "ci95_high": 4.18,
+        "t_stat": -0.0133,
+        "p_value_ttest": 0.989938,
+        "w_stat": 5.0,
+        "p_value_wilcoxon": 0.625,
+        "fold_diffs": [
+          -7.81,
+          2.21,
+          0.0,
+          0.91,
+          1.04,
+          3.52
+        ]
+      },
+      "macro_f1": {
+        "comparison": "wav2vec2 full FT (Weighted CE) vs Unweighted CE",
+        "mean_a": 70.3,
+        "std_a": 6.48,
+        "mean_b": 70.08,
+        "std_b": 7.7,
+        "mean_diff": 0.23,
+        "std_diff": 4.23,
+        "ci95_low": -4.21,
+        "ci95_high": 4.66,
+        "t_stat": 0.1313,
+        "p_value_ttest": 0.900655,
+        "w_stat": 7.0,
+        "p_value_wilcoxon": 0.5625,
+        "fold_diffs": [
+          -7.79,
+          2.34,
+          -0.59,
+          1.47,
+          1.65,
+          4.28
+        ]
+      },
+      "wa": {
+        "comparison": "wav2vec2 full FT (Weighted CE) vs Unweighted CE",
+        "mean_a": 71.57,
+        "std_a": 6.46,
+        "mean_b": 71.16,
+        "std_b": 7.2,
+        "mean_diff": 0.42,
+        "std_diff": 3.73,
+        "ci95_low": -3.49,
+        "ci95_high": 4.33,
+        "t_stat": 0.2739,
+        "p_value_ttest": 0.795112,
+        "w_stat": 6.0,
+        "p_value_wilcoxon": 0.4375,
+        "fold_diffs": [
+          -6.81,
+          2.5,
+          0.56,
+          0.84,
+          1.66,
+          3.75
+        ]
+      }
+    }
+  },
+  "noise_paired_tests_holm": {
+    "white": {
+      "full_ft_vs_partial_ft": {
+        "uar": {
+          "snr_20dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 64.26,
+            "std_a": 8.72,
+            "mean_b": 60.05,
+            "std_b": 7.29,
+            "mean_diff": 4.21,
+            "std_diff": 4.88,
+            "ci95_low": -0.91,
+            "ci95_high": 9.33,
+            "t_stat": 2.1127,
+            "p_value_ttest": 0.088318,
+            "w_stat": 3.0,
+            "p_value_wilcoxon": 0.15625,
+            "fold_diffs": [
+              -0.65,
+              11.45,
+              3.38,
+              -0.91,
+              3.78,
+              8.21
+            ],
+            "p_value_ttest_holm": 0.225138,
+            "p_value_wilcoxon_holm": 0.3125
+          },
+          "snr_10dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 58.46,
+            "std_a": 10.4,
+            "mean_b": 52.22,
+            "std_b": 5.52,
+            "mean_diff": 6.25,
+            "std_diff": 9.37,
+            "ci95_low": -3.59,
+            "ci95_high": 16.08,
+            "t_stat": 1.6329,
+            "p_value_ttest": 0.163414,
+            "w_stat": 4.0,
+            "p_value_wilcoxon": 0.21875,
+            "fold_diffs": [
+              14.72,
+              15.1,
+              -2.87,
+              -7.3,
+              6.9,
+              10.94
+            ],
+            "p_value_ttest_holm": 0.225138,
+            "p_value_wilcoxon_holm": 0.3125
+          },
+          "snr_0dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 32.47,
+            "std_a": 11.26,
+            "mean_b": 24.96,
+            "std_b": 6.73,
+            "mean_diff": 7.51,
+            "std_diff": 8.21,
+            "ci95_low": -1.1,
+            "ci95_high": 16.12,
+            "t_stat": 2.2418,
+            "p_value_ttest": 0.075046,
+            "w_stat": 2.0,
+            "p_value_wilcoxon": 0.09375,
+            "fold_diffs": [
+              11.72,
+              17.19,
+              1.96,
+              -5.73,
+              8.07,
+              11.85
+            ],
+            "p_value_ttest_holm": 0.225138,
+            "p_value_wilcoxon_holm": 0.28125
+          }
+        },
+        "macro_f1": {
+          "snr_20dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 62.58,
+            "std_a": 8.87,
+            "mean_b": 57.91,
+            "std_b": 7.36,
+            "mean_diff": 4.67,
+            "std_diff": 5.76,
+            "ci95_low": -1.38,
+            "ci95_high": 10.72,
+            "t_stat": 1.983,
+            "p_value_ttest": 0.104172,
+            "w_stat": 3.0,
+            "p_value_wilcoxon": 0.15625,
+            "fold_diffs": [
+              -1.23,
+              13.34,
+              3.56,
+              -1.4,
+              4.81,
+              8.92
+            ],
+            "p_value_ttest_holm": 0.286389,
+            "p_value_wilcoxon_holm": 0.3125
+          },
+          "snr_10dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 57.11,
+            "std_a": 10.57,
+            "mean_b": 50.56,
+            "std_b": 6.22,
+            "mean_diff": 6.55,
+            "std_diff": 9.05,
+            "ci95_low": -2.96,
+            "ci95_high": 16.05,
+            "t_stat": 1.7707,
+            "p_value_ttest": 0.136825,
+            "w_stat": 4.0,
+            "p_value_wilcoxon": 0.21875,
+            "fold_diffs": [
+              14.79,
+              15.16,
+              -1.13,
+              -6.78,
+              5.25,
+              11.98
+            ],
+            "p_value_ttest_holm": 0.286389,
+            "p_value_wilcoxon_holm": 0.3125
+          },
+          "snr_0dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 26.79,
+            "std_a": 11.65,
+            "mean_b": 18.8,
+            "std_b": 7.23,
+            "mean_diff": 7.99,
+            "std_diff": 9.54,
+            "ci95_low": -2.02,
+            "ci95_high": 18.01,
+            "t_stat": 2.0515,
+            "p_value_ttest": 0.095463,
+            "w_stat": 2.0,
+            "p_value_wilcoxon": 0.09375,
+            "fold_diffs": [
+              12.28,
+              21.35,
+              0.89,
+              -6.07,
+              8.3,
+              11.21
+            ],
+            "p_value_ttest_holm": 0.286389,
+            "p_value_wilcoxon_holm": 0.28125
+          }
+        }
+      },
+      "full_ft_vs_wavlm": {
+        "uar": {
+          "snr_20dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 64.26,
+            "std_a": 8.72,
+            "mean_b": 56.36,
+            "std_b": 11.74,
+            "mean_diff": 7.9,
+            "std_diff": 17.82,
+            "ci95_low": -10.81,
+            "ci95_high": 26.6,
+            "t_stat": 1.0855,
+            "p_value_ttest": 0.327261,
+            "w_stat": 9.0,
+            "p_value_wilcoxon": 0.84375,
+            "fold_diffs": [
+              -2.6,
+              42.44,
+              -3.78,
+              2.08,
+              -2.21,
+              11.46
+            ],
+            "p_value_ttest_holm": 0.981783,
+            "p_value_wilcoxon_holm": 1.0
+          },
+          "snr_10dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 58.46,
+            "std_a": 10.4,
+            "mean_b": 51.52,
+            "std_b": 11.36,
+            "mean_diff": 6.94,
+            "std_diff": 17.21,
+            "ci95_low": -11.11,
+            "ci95_high": 25.0,
+            "t_stat": 0.9884,
+            "p_value_ttest": 0.368352,
+            "w_stat": 8.0,
+            "p_value_wilcoxon": 0.6875,
+            "fold_diffs": [
+              3.65,
+              38.28,
+              -2.87,
+              -7.95,
+              -3.78,
+              14.33
+            ],
+            "p_value_ttest_holm": 0.981783,
+            "p_value_wilcoxon_holm": 1.0
+          },
+          "snr_0dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 32.47,
+            "std_a": 11.26,
+            "mean_b": 37.94,
+            "std_b": 9.61,
+            "mean_diff": -5.47,
+            "std_diff": 18.55,
+            "ci95_low": -24.94,
+            "ci95_high": 14.0,
+            "t_stat": -0.7221,
+            "p_value_ttest": 0.502555,
+            "w_stat": 8.0,
+            "p_value_wilcoxon": 0.6875,
+            "fold_diffs": [
+              -16.15,
+              18.88,
+              -12.76,
+              -27.09,
+              -11.59,
+              15.89
+            ],
+            "p_value_ttest_holm": 0.981783,
+            "p_value_wilcoxon_holm": 1.0
+          }
+        },
+        "macro_f1": {
+          "snr_20dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 62.58,
+            "std_a": 8.87,
+            "mean_b": 52.89,
+            "std_b": 13.54,
+            "mean_diff": 9.7,
+            "std_diff": 20.44,
+            "ci95_low": -11.76,
+            "ci95_high": 31.15,
+            "t_stat": 1.1619,
+            "p_value_ttest": 0.297736,
+            "w_stat": 7.0,
+            "p_value_wilcoxon": 0.5625,
+            "fold_diffs": [
+              -3.47,
+              48.45,
+              -4.37,
+              3.64,
+              -2.1,
+              16.02
+            ],
+            "p_value_ttest_holm": 0.893208,
+            "p_value_wilcoxon_holm": 1.0
+          },
+          "snr_10dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 57.11,
+            "std_a": 10.57,
+            "mean_b": 48.11,
+            "std_b": 12.81,
+            "mean_diff": 9.0,
+            "std_diff": 19.26,
+            "ci95_low": -11.22,
+            "ci95_high": 29.22,
+            "t_stat": 1.1444,
+            "p_value_ttest": 0.304261,
+            "w_stat": 8.0,
+            "p_value_wilcoxon": 0.6875,
+            "fold_diffs": [
+              6.06,
+              42.81,
+              -1.57,
+              -6.3,
+              -6.64,
+              19.64
+            ],
+            "p_value_ttest_holm": 0.893208,
+            "p_value_wilcoxon_holm": 1.0
+          },
+          "snr_0dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 26.79,
+            "std_a": 11.65,
+            "mean_b": 34.25,
+            "std_b": 11.56,
+            "mean_diff": -7.46,
+            "std_diff": 21.57,
+            "ci95_low": -30.1,
+            "ci95_high": 15.19,
+            "t_stat": -0.8464,
+            "p_value_ttest": 0.435937,
+            "w_stat": 7.0,
+            "p_value_wilcoxon": 0.5625,
+            "fold_diffs": [
+              -18.19,
+              21.81,
+              -14.87,
+              -31.83,
+              -18.41,
+              16.76
+            ],
+            "p_value_ttest_holm": 0.893208,
+            "p_value_wilcoxon_holm": 1.0
+          }
+        }
+      }
+    },
+    "babble": {
+      "full_ft_vs_partial_ft": {
+        "uar": {
+          "babble_20dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 63.17,
+            "std_a": 7.35,
+            "mean_b": 61.63,
+            "std_b": 4.68,
+            "mean_diff": 1.54,
+            "std_diff": 3.76,
+            "ci95_low": -2.4,
+            "ci95_high": 5.49,
+            "t_stat": 1.0042,
+            "p_value_ttest": 0.361391,
+            "w_stat": 5.0,
+            "p_value_wilcoxon": 0.625,
+            "fold_diffs": [
+              0.0,
+              8.85,
+              0.4,
+              -1.04,
+              -1.04,
+              2.08
+            ],
+            "p_value_ttest_holm": 0.477604,
+            "p_value_wilcoxon_holm": 0.625
+          },
+          "babble_10dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 53.38,
+            "std_a": 5.97,
+            "mean_b": 51.76,
+            "std_b": 4.8,
+            "mean_diff": 1.63,
+            "std_diff": 1.84,
+            "ci95_low": -0.31,
+            "ci95_high": 3.56,
+            "t_stat": 2.1604,
+            "p_value_ttest": 0.083141,
+            "w_stat": 2.5,
+            "p_value_wilcoxon": 0.125,
+            "fold_diffs": [
+              2.6,
+              4.04,
+              -0.65,
+              2.99,
+              0.13,
+              0.65
+            ],
+            "p_value_ttest_holm": 0.249423,
+            "p_value_wilcoxon_holm": 0.375
+          },
+          "babble_0dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 41.78,
+            "std_a": 4.08,
+            "mean_b": 40.69,
+            "std_b": 4.36,
+            "mean_diff": 1.08,
+            "std_diff": 1.98,
+            "ci95_low": -1.0,
+            "ci95_high": 3.17,
+            "t_stat": 1.3371,
+            "p_value_ttest": 0.238802,
+            "w_stat": 4.0,
+            "p_value_wilcoxon": 0.21875,
+            "fold_diffs": [
+              3.9,
+              0.91,
+              0.13,
+              0.78,
+              -1.82,
+              2.6
+            ],
+            "p_value_ttest_holm": 0.477604,
+            "p_value_wilcoxon_holm": 0.4375
+          }
+        },
+        "macro_f1": {
+          "babble_20dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 62.4,
+            "std_a": 7.56,
+            "mean_b": 60.19,
+            "std_b": 4.91,
+            "mean_diff": 2.22,
+            "std_diff": 4.39,
+            "ci95_low": -2.39,
+            "ci95_high": 6.82,
+            "t_stat": 1.2376,
+            "p_value_ttest": 0.2708,
+            "w_stat": 5.0,
+            "p_value_wilcoxon": 0.3125,
+            "fold_diffs": [
+              -0.31,
+              10.7,
+              1.48,
+              -1.36,
+              0.13,
+              2.66
+            ],
+            "p_value_ttest_holm": 0.39142,
+            "p_value_wilcoxon_holm": 0.46875
+          },
+          "babble_10dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 51.09,
+            "std_a": 5.95,
+            "mean_b": 49.57,
+            "std_b": 4.03,
+            "mean_diff": 1.52,
+            "std_diff": 2.49,
+            "ci95_low": -1.1,
+            "ci95_high": 4.14,
+            "t_stat": 1.4928,
+            "p_value_ttest": 0.19571,
+            "w_stat": 4.0,
+            "p_value_wilcoxon": 0.21875,
+            "fold_diffs": [
+              1.41,
+              6.36,
+              -0.38,
+              1.51,
+              0.31,
+              -0.09
+            ],
+            "p_value_ttest_holm": 0.39142,
+            "p_value_wilcoxon_holm": 0.46875
+          },
+          "babble_0dB": {
+            "comparison": "wav2vec2 full FT vs wav2vec2 partial FT",
+            "mean_a": 39.1,
+            "std_a": 4.29,
+            "mean_b": 37.67,
+            "std_b": 3.87,
+            "mean_diff": 1.43,
+            "std_diff": 1.78,
+            "ci95_low": -0.44,
+            "ci95_high": 3.3,
+            "t_stat": 1.9668,
+            "p_value_ttest": 0.106354,
+            "w_stat": 3.0,
+            "p_value_wilcoxon": 0.15625,
+            "fold_diffs": [
+              2.95,
+              3.53,
+              1.37,
+              -0.09,
+              -1.13,
+              1.95
+            ],
+            "p_value_ttest_holm": 0.319062,
+            "p_value_wilcoxon_holm": 0.46875
+          }
+        }
+      },
+      "full_ft_vs_wavlm": {
+        "uar": {
+          "babble_20dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 63.17,
+            "std_a": 7.35,
+            "mean_b": 59.63,
+            "std_b": 11.05,
+            "mean_diff": 3.54,
+            "std_diff": 16.23,
+            "ci95_low": -13.49,
+            "ci95_high": 20.57,
+            "t_stat": 0.5343,
+            "p_value_ttest": 0.616016,
+            "w_stat": 7.5,
+            "p_value_wilcoxon": 0.59375,
+            "fold_diffs": [
+              -6.77,
+              36.2,
+              -3.12,
+              -0.39,
+              -5.07,
+              0.39
+            ],
+            "p_value_ttest_holm": 1.0,
+            "p_value_wilcoxon_holm": 0.9375
+          },
+          "babble_10dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 53.38,
+            "std_a": 5.97,
+            "mean_b": 55.1,
+            "std_b": 10.69,
+            "mean_diff": -1.72,
+            "std_diff": 14.42,
+            "ci95_low": -16.85,
+            "ci95_high": 13.41,
+            "t_stat": -0.2919,
+            "p_value_ttest": 0.78206,
+            "w_stat": 6.0,
+            "p_value_wilcoxon": 0.4375,
+            "fold_diffs": [
+              -13.55,
+              26.82,
+              -5.86,
+              -8.47,
+              -6.25,
+              -3.0
+            ],
+            "p_value_ttest_holm": 1.0,
+            "p_value_wilcoxon_holm": 0.9375
+          },
+          "babble_0dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 41.78,
+            "std_a": 4.08,
+            "mean_b": 46.33,
+            "std_b": 7.43,
+            "mean_diff": -4.56,
+            "std_diff": 10.77,
+            "ci95_low": -15.86,
+            "ci95_high": 6.74,
+            "t_stat": -1.0365,
+            "p_value_ttest": 0.34748,
+            "w_stat": 5.0,
+            "p_value_wilcoxon": 0.3125,
+            "fold_diffs": [
+              -15.11,
+              14.98,
+              -7.55,
+              -12.11,
+              -6.9,
+              -0.65
+            ],
+            "p_value_ttest_holm": 1.0,
+            "p_value_wilcoxon_holm": 0.9375
+          }
+        },
+        "macro_f1": {
+          "babble_20dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 62.4,
+            "std_a": 7.56,
+            "mean_b": 57.2,
+            "std_b": 13.3,
+            "mean_diff": 5.21,
+            "std_diff": 19.08,
+            "ci95_low": -14.81,
+            "ci95_high": 25.23,
+            "t_stat": 0.6686,
+            "p_value_ttest": 0.5334,
+            "w_stat": 9.0,
+            "p_value_wilcoxon": 0.84375,
+            "fold_diffs": [
+              -6.69,
+              43.39,
+              -3.08,
+              0.72,
+              -6.02,
+              2.92
+            ],
+            "p_value_ttest_holm": 1.0,
+            "p_value_wilcoxon_holm": 1.0
+          },
+          "babble_10dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 51.09,
+            "std_a": 5.95,
+            "mean_b": 53.03,
+            "std_b": 12.8,
+            "mean_diff": -1.94,
+            "std_diff": 17.0,
+            "ci95_low": -19.78,
+            "ci95_high": 15.9,
+            "t_stat": -0.2797,
+            "p_value_ttest": 0.790887,
+            "w_stat": 6.0,
+            "p_value_wilcoxon": 0.4375,
+            "fold_diffs": [
+              -15.55,
+              31.72,
+              -8.45,
+              -9.6,
+              -6.98,
+              -2.79
+            ],
+            "p_value_ttest_holm": 1.0,
+            "p_value_wilcoxon_holm": 1.0
+          },
+          "babble_0dB": {
+            "comparison": "wav2vec2 full FT vs WavLM Base+ full FT",
+            "mean_a": 39.1,
+            "std_a": 4.29,
+            "mean_b": 43.66,
+            "std_b": 9.99,
+            "mean_diff": -4.56,
+            "std_diff": 14.04,
+            "ci95_low": -19.3,
+            "ci95_high": 10.18,
+            "t_stat": -0.7953,
+            "p_value_ttest": 0.462514,
+            "w_stat": 7.0,
+            "p_value_wilcoxon": 0.5625,
+            "fold_diffs": [
+              -18.45,
+              20.17,
+              -7.4,
+              -15.8,
+              -7.53,
+              1.65
+            ],
+            "p_value_ttest_holm": 1.0,
+            "p_value_wilcoxon_holm": 1.0
+          }
+        }
+      }
+    }
+  },
+  "unweighted_ce_collapse": {
+    "collapsed_runs": 0,
+    "total_runs": 18,
+    "details": [
+      {
+        "seed": 42,
+        "fold": 1,
+        "collapsed": false,
+        "dominant_class": "surprised",
+        "dominant_ratio": 0.15,
+        "uar": 80.47,
+        "macro_f1": 78.52
+      },
+      {
+        "seed": 42,
+        "fold": 2,
+        "collapsed": false,
+        "dominant_class": "calm",
+        "dominant_ratio": 0.1917,
+        "uar": 80.86,
+        "macro_f1": 80.78
+      },
+      {
+        "seed": 42,
+        "fold": 3,
+        "collapsed": false,
+        "dominant_class": "sad",
+        "dominant_ratio": 0.2583,
+        "uar": 67.58,
+        "macro_f1": 68.99
+      },
+      {
+        "seed": 42,
+        "fold": 4,
+        "collapsed": false,
+        "dominant_class": "angry",
+        "dominant_ratio": 0.2,
+        "uar": 64.84,
+        "macro_f1": 61.95
+      },
+      {
+        "seed": 42,
+        "fold": 5,
+        "collapsed": false,
+        "dominant_class": "happy",
+        "dominant_ratio": 0.1458,
+        "uar": 75.0,
+        "macro_f1": 75.03
+      },
+      {
+        "seed": 42,
+        "fold": 6,
+        "collapsed": false,
+        "dominant_class": "surprised",
+        "dominant_ratio": 0.1958,
+        "uar": 68.36,
+        "macro_f1": 63.53
+      },
+      {
+        "seed": 43,
+        "fold": 1,
+        "collapsed": false,
+        "dominant_class": "surprised",
+        "dominant_ratio": 0.1667,
+        "uar": 83.2,
+        "macro_f1": 82.62
+      },
+      {
+        "seed": 43,
+        "fold": 2,
+        "collapsed": false,
+        "dominant_class": "calm",
+        "dominant_ratio": 0.2,
+        "uar": 77.73,
+        "macro_f1": 76.82
+      },
+      {
+        "seed": 43,
+        "fold": 3,
+        "collapsed": false,
+        "dominant_class": "sad",
+        "dominant_ratio": 0.2708,
+        "uar": 64.84,
+        "macro_f1": 64.94
+      },
+      {
+        "seed": 43,
+        "fold": 4,
+        "collapsed": false,
+        "dominant_class": "happy",
+        "dominant_ratio": 0.1917,
+        "uar": 62.11,
+        "macro_f1": 57.24
+      },
+      {
+        "seed": 43,
+        "fold": 5,
+        "collapsed": false,
+        "dominant_class": "disgust",
+        "dominant_ratio": 0.2167,
+        "uar": 66.02,
+        "macro_f1": 64.76
+      },
+      {
+        "seed": 43,
+        "fold": 6,
+        "collapsed": false,
+        "dominant_class": "calm",
+        "dominant_ratio": 0.1625,
+        "uar": 75.39,
+        "macro_f1": 72.95
+      },
+      {
+        "seed": 44,
+        "fold": 1,
+        "collapsed": false,
+        "dominant_class": "happy",
+        "dominant_ratio": 0.2167,
+        "uar": 79.3,
+        "macro_f1": 79.12
+      },
+      {
+        "seed": 44,
+        "fold": 2,
+        "collapsed": false,
+        "dominant_class": "calm",
+        "dominant_ratio": 0.1917,
+        "uar": 78.91,
+        "macro_f1": 78.54
+      },
+      {
+        "seed": 44,
+        "fold": 3,
+        "collapsed": false,
+        "dominant_class": "sad",
+        "dominant_ratio": 0.2333,
+        "uar": 65.23,
+        "macro_f1": 65.62
+      },
+      {
+        "seed": 44,
+        "fold": 4,
+        "collapsed": false,
+        "dominant_class": "happy",
+        "dominant_ratio": 0.2917,
+        "uar": 64.45,
+        "macro_f1": 62.09
+      },
+      {
+        "seed": 44,
+        "fold": 5,
+        "collapsed": false,
+        "dominant_class": "disgust",
+        "dominant_ratio": 0.2083,
+        "uar": 66.02,
+        "macro_f1": 64.46
+      },
+      {
+        "seed": 44,
+        "fold": 6,
+        "collapsed": false,
+        "dominant_class": "surprised",
+        "dominant_ratio": 0.1917,
+        "uar": 67.97,
+        "macro_f1": 63.42
+      }
+    ]
+  },
+  "pooled_confusions": {
+    "w2v2_full_ft_seed42": {
+      "cm": [
+        [
+          69,
+          13,
+          3,
+          10,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          18,
+          154,
+          1,
+          15,
+          0,
+          3,
+          0,
+          1
+        ],
+        [
+          20,
+          1,
+          131,
+          6,
+          8,
+          8,
+          3,
+          15
+        ],
+        [
+          21,
+          28,
+          8,
+          105,
+          2,
+          18,
+          10,
+          0
+        ],
+        [
+          1,
+          0,
+          8,
+          2,
+          163,
+          1,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          9,
+          12,
+          11,
+          144,
+          1,
+          9
+        ],
+        [
+          1,
+          1,
+          4,
+          21,
+          14,
+          1,
+          147,
+          3
+        ],
+        [
+          1,
+          0,
+          30,
+          5,
+          7,
+          1,
+          3,
+          145
+        ]
+      ],
+      "metrics": {
+        "wa": 73.47222222222223,
+        "uar": 73.37239583333334,
+        "macro_f1": 72.75670971887511,
+        "weighted_f1": 73.5896897845585
+      }
+    },
+    "w2v2_full_ft_3seeds": {
+      "cm": [
+        [
+          73,
+          10,
+          4,
+          6,
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          18,
+          153,
+          5,
+          14,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          20,
+          0,
+          137,
+          6,
+          6,
+          4,
+          1,
+          18
+        ],
+        [
+          22,
+          29,
+          21,
+          95,
+          0,
+          14,
+          11,
+          0
+        ],
+        [
+          3,
+          0,
+          14,
+          2,
+          156,
+          3,
+          6,
+          8
+        ],
+        [
+          2,
+          5,
+          7,
+          14,
+          11,
+          139,
+          3,
+          11
+        ],
+        [
+          0,
+          1,
+          3,
+          16,
+          15,
+          3,
+          150,
+          4
+        ],
+        [
+          2,
+          0,
+          24,
+          2,
+          0,
+          1,
+          4,
+          159
+        ]
+      ],
+      "metrics": {
+        "wa": 73.75,
+        "uar": 73.89322916666667,
+        "macro_f1": 73.04839582313241,
+        "weighted_f1": 73.79399509269716
+      }
+    },
+    "w2v2_partial_ft_seed42": {
+      "cm": [
+        [
+          77,
+          8,
+          4,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          23,
+          144,
+          5,
+          18,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          23,
+          3,
+          134,
+          6,
+          10,
+          1,
+          1,
+          14
+        ],
+        [
+          31,
+          30,
+          15,
+          93,
+          2,
+          11,
+          9,
+          1
+        ],
+        [
+          4,
+          0,
+          15,
+          1,
+          155,
+          2,
+          7,
+          8
+        ],
+        [
+          4,
+          3,
+          14,
+          18,
+          9,
+          136,
+          1,
+          7
+        ],
+        [
+          0,
+          0,
+          2,
+          16,
+          17,
+          3,
+          148,
+          6
+        ],
+        [
+          1,
+          0,
+          23,
+          2,
+          4,
+          1,
+          4,
+          157
+        ]
+      ],
+      "metrics": {
+        "wa": 72.5,
+        "uar": 72.98177083333334,
+        "macro_f1": 71.93226766087352,
+        "weighted_f1": 72.76378820763445
+      }
+    },
+    "w2v2_partial_ft_3seeds": {
+      "cm": [
+        [
+          72,
+          12,
+          5,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18,
+          161,
+          2,
+          9,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          15,
+          2,
+          141,
+          7,
+          6,
+          4,
+          0,
+          17
+        ],
+        [
+          25,
+          33,
+          20,
+          99,
+          0,
+          10,
+          5,
+          0
+        ],
+        [
+          4,
+          1,
+          14,
+          0,
+          157,
+          2,
+          6,
+          8
+        ],
+        [
+          4,
+          6,
+          9,
+          17,
+          9,
+          132,
+          3,
+          12
+        ],
+        [
+          0,
+          1,
+          6,
+          16,
+          15,
+          4,
+          147,
+          3
+        ],
+        [
+          0,
+          0,
+          29,
+          4,
+          1,
+          0,
+          2,
+          156
+        ]
+      ],
+      "metrics": {
+        "wa": 73.95833333333334,
+        "uar": 74.0234375,
+        "macro_f1": 73.31197886665333,
+        "weighted_f1": 74.09688002186613
+      }
+    },
+    "wavlm_full_ft_seed42": {
+      "cm": [
+        [
+          69,
+          12,
+          4,
+          6,
+          3,
+          0,
+          0,
+          2
+        ],
+        [
+          18,
+          154,
+          5,
+          12,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          21,
+          2,
+          116,
+          16,
+          6,
+          7,
+          7,
+          17
+        ],
+        [
+          23,
+          30,
+          19,
+          95,
+          1,
+          14,
+          10,
+          0
+        ],
+        [
+          2,
+          0,
+          11,
+          1,
+          158,
+          1,
+          13,
+          6
+        ],
+        [
+          1,
+          0,
+          12,
+          31,
+          14,
+          128,
+          3,
+          3
+        ],
+        [
+          0,
+          0,
+          5,
+          10,
+          16,
+          3,
+          158,
+          0
+        ],
+        [
+          0,
+          0,
+          40,
+          0,
+          10,
+          4,
+          6,
+          132
+        ]
+      ],
+      "metrics": {
+        "wa": 70.13888888888889,
+        "uar": 70.24739583333334,
+        "macro_f1": 69.58787135123343,
+        "weighted_f1": 70.227062774649
+      }
+    },
+    "wavlm_full_ft_3seeds": {
+      "cm": [
+        [
+          70,
+          13,
+          3,
+          7,
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          15,
+          163,
+          5,
+          8,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          21,
+          1,
+          130,
+          10,
+          6,
+          5,
+          3,
+          16
+        ],
+        [
+          19,
+          38,
+          19,
+          97,
+          3,
+          10,
+          6,
+          0
+        ],
+        [
+          3,
+          1,
+          10,
+          3,
+          160,
+          1,
+          7,
+          7
+        ],
+        [
+          4,
+          0,
+          16,
+          25,
+          12,
+          131,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          6,
+          15,
+          19,
+          3,
+          149,
+          0
+        ],
+        [
+          0,
+          0,
+          34,
+          2,
+          4,
+          3,
+          6,
+          143
+        ]
+      ],
+      "metrics": {
+        "wa": 72.43055555555556,
+        "uar": 72.4609375,
+        "macro_f1": 71.87347936636993,
+        "weighted_f1": 72.57147740599929
+      }
+    }
+  }
+}

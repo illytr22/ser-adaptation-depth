@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Audio data & model checkpoints (do not commit large binaries)
+data/
+*.wav
+*.mp4
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.npz
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.mplconfig/
